@@ -24,6 +24,7 @@ const typed = new Typed('.typed', {
 
 window.addEventListener("scroll", () => {
 	let value = Math.floor(window.scrollY);
+	console.log(value);
 
 	if(value != 0){
 		header.style.background = "#091a2a";
