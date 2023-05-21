@@ -138,6 +138,8 @@ body::-webkit-scrollbar {
     font-style: normal;
     color: #38f5ff;
     font-size: 1.1em;
+    font-weight: 600;
+
 }
 
 
