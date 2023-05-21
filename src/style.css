@@ -146,12 +146,14 @@ body::-webkit-scrollbar {
 .about {
     background: #091a2a;
     width: 100%;
-    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .about-title {
     color: #fff;
     font-size: 4em;
+    transform: translateY(-20px);
 }
 
 .about-description {
