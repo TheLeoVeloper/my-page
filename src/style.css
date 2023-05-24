@@ -162,3 +162,12 @@ body::-webkit-scrollbar {
     color: #fff;
 
 }
+
+.white {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 25px;
+}
