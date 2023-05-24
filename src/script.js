@@ -1,4 +1,9 @@
 let header = document.querySelector(".header");
+let progressbar = document.getElementById("progress-bar")
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+let hiddenElements = document.querySelectorAll(".hidden");
+let observerItem = document.querySelectorAll("#observer-item");
+
 
 const typed = new Typed('.typed', {
     strings: [
@@ -6,7 +11,8 @@ const typed = new Typed('.typed', {
      "<i class='writes'>Web developer</i>", 
      "<i class='writes'>Android developer</i>", 
      "<i class='writes'>Frontend developer</i>", 
-     "<i class='writes'>Backend developer</i>"
+     "<i class='writes'>Backend developer</i>",
+	 "<i class='writes'>Fullstack developer</i>"
     ],
     stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
@@ -22,9 +28,10 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+console.log(hiddenElements);
+
 window.addEventListener("scroll", () => {
 	let value = Math.floor(window.scrollY);
-	console.log(value);
 
 	if(value != 0){
 		header.style.background = "#091a2a";
@@ -35,5 +42,19 @@ window.addEventListener("scroll", () => {
 	}
 })
 
+window.onscroll = function(){
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progressbar.style.height = progressHeight + "%"
+}
 
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if(entry.isIntersecting){
+			entry.target.classList.add("show");
+		} else {
+			entry.target.classList.remove("show");
+		}
+	})
+})
 
+observerItem.forEach((el) => observer.observe(el));
