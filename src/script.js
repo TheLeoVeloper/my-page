@@ -3,7 +3,29 @@ let progressbar = document.getElementById("progress-bar")
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 let hiddenElements = document.querySelectorAll(".hidden");
 let observerItem = document.querySelectorAll("#observer-item");
+let hamburger = document.querySelector(".hamburger");
+let navigationResponsive = document.querySelector(".navigation-responsive")
 
+let home = document.querySelector(".home");
+home.addEventListener("click", () => {
+	navigationResponsive.classList.remove("style")
+})
+let about = document.querySelector(".aboutt");
+about.addEventListener("click", () => {
+	navigationResponsive.classList.remove("style")
+})
+let skills = document.querySelector(".skills");
+skills.addEventListener("click", () => {
+	navigationResponsive.classList.remove("style")
+})
+let port = document.querySelector(".port");
+port.addEventListener("click", () => {
+	navigationResponsive.classList.remove("style")
+})
+let contact = document.querySelector(".contact");
+contact.addEventListener("click", () => {
+	navigationResponsive.classList.remove("style")
+})
 
 const typed = new Typed('.typed', {
     strings: [
@@ -27,8 +49,6 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
-
-console.log(hiddenElements);
 
 window.addEventListener("scroll", () => {
 	let value = Math.floor(window.scrollY);
@@ -58,3 +78,7 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 observerItem.forEach((el) => observer.observe(el));
+
+hamburger.addEventListener("click", () => {
+	navigationResponsive.classList.toggle("style");
+})

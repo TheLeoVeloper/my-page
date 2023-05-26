@@ -7,34 +7,40 @@
         <title>Leo</title>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="src/style.css">
-        <title>Leo.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Leo</title>
     </head>
     <body>
+        
         <div id="progress-bar"></div>
         <div id="scrollPath"></div>
         <div class="header">
-            <h2 class="logo"><span class="light-blue">L</span>eo.</h2>
-            <div class="navigation">
-                <a href="#main">Home</a>
-                <a href="#about">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+            <div class="header-content">
+                <h2 class="logo"><span class="light-blue">L</span>eo.</h2>
+                <div class="navigation">
+                    <a href="#main">Inicio</a>
+                    <a href="#about">Sobre mí</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#">Portafolio</a>
+                    <a href="#">Contactame</a>
+                </div>
+            </div>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="navigation-responsive">
+                <a href="#main" class="home">Inicio</a>
+                <a href="#about" class="aboutt">Sobre mí</a>
+                <a href="#skills" class="skills">Habilidades</a>
+                <a href="#" class="port">Portafolio</a>
+                <a href="#" class="contact">Contactame</a>
             </div>
         </div>
         <div class="main" id="main">
             <div class="modifier">
                 <span class="typed"></span>
             </div>
-            <h1>Hi, I'm Leo</h1>
+            <h1>Hola, soy Leo</h1>
             <div class="text-description">
-                <p class="description">Hey there! Welcome to my website. I'm an
-                    experienced web developer and I'm here to help you create
-                    the website you've always wanted. Whether you need a
-                    personal page, an online store, or a website for your
-                    business, I'm here to help you achieve your online goals.
-                    Take a look and contact me to start working together on your
-                    project!</p>
+                <p class="description">Soy un desarrollador web con experiencia en la creación de sitios web y aplicaciones móviles. Me enfoco en crear interfaces intuitivas y atractivas para los usuarios, y siempre me aseguro de que mi trabajo sea de alta calidad. Soy un experto en la gestión del tiempo y puedo trabajar bajo presión para cumplir con los plazos. Si necesitas una página web increíble, ¡contáctame!</p>
                 <button class="btn">Ver más</button>
             </div>
         </div>
@@ -140,11 +146,74 @@
                             digital.</p></div>
 
                     <div class="white"><p class="hidden" id="observer-item">Soy un alma inquieta, sedienta
-                            de
-                            conocimiento, y mis sueños surcan los horizontes
-                            del futuro.</p></div>
+                            de conocimiento, y mis sueños surcan los horizontes del futuro.</p></div>
                 </div>
             </div>
+            <div class="skills" id="skills">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#091a2a" fill-opacity="1" d="M0,96L21.8,96C43.6,96,87,96,131,80C174.5,64,218,32,262,42.7C305.5,53,349,107,393,128C436.4,149,480,139,524,144C567.3,149,611,171,655,197.3C698.2,224,742,256,785,250.7C829.1,245,873,203,916,197.3C960,192,1004,224,1047,202.7C1090.9,181,1135,107,1178,90.7C1221.8,75,1265,117,1309,112C1352.7,107,1396,53,1418,26.7L1440,0L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
+                <div class="real-content">
+                    <h2 class="skill-title">Skills</h2>
+                    <div class="skills-section">
+                        <section>
+                            <span class="subtitle">Html</span>
+                                <div class="bar-content">
+                                <div class="bar">
+                                    <div class="inter-bar html"></div>
+                                </div>
+                                <span class="percent">100%</span>
+                            </div>
+                        </section>
+                        <section>
+                                <span class="subtitle">Css</span>
+
+                            <div class="bar-content">
+                                <div class="bar">
+                                    <div class="inter-bar css"></div>
+                                </div>
+                                <span class="percent">100%</span>
+                            </div>
+                        </section>
+                        <section>
+                                <span class="subtitle javascript">JavaScript</span>
+
+                            <div class="bar-content">
+                                <div class="bar">
+                                    <div class="inter-bar"></div>
+                                </div>
+                                <span class="percent">100%</span>
+                            </div>
+                        </section>
+                        <section>
+                            <span class="subtitle python">Python</span>
+                            <div class="bar-content">
+                                <div class="bar">
+                                    <div class="inter-bar"></div>
+                                </div>
+                                <span class="percent">100%</span>
+                            </div>
+                        </section>
+                        <section>
+                            <span class="subtitle dart">Dart</span>
+                            <div class="bar-content">
+                                <div class="bar">
+                                    <div class="inter-bar"></div>
+                                </div>
+                                <span class="percent">100%</span>
+                            </div>
+                        </section>
+                        <section>
+                            <span class="subtitle flutter">Flutter</span>
+                            <div class="bar-content">
+                                <div class="bar">
+                                    <div class="inter-bar"></div>
+                                </div>
+                                <span class="percent">100%</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
 
             <script
                 src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
